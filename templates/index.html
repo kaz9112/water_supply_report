@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>water-supply</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}"/>
   </head>
   <body>
     <div class="container">
       <h1>KIPI Water Supply Report</h1>
       <p>Mohon isi form dengan data yang sesungguhnya</p>
-      <form method="post" action='https://register-demo.freecodecamp.org'>
+      <form method="post">
         <fieldset>
           <label for="origin">Asal:
             <select id="origin" name="origin">
@@ -19,22 +19,22 @@
             </select>
           </label>
           <label for="destination">Tujuan:
-            <select id="destination" name="destination">
+            <select id="destination" name="destination" required>
               <option value="">(pilih salah satu)</option>
-              <option value="1">Batching Plant KAI</option>
-              <option value="2">Kantor KIPI</option>
-              <option value="3">Bedeng KAI untuk TKA (Asing)</option>
-              <option value="4">Bedeng KAI untuk TKI (Indonesia)</option>
+              <option value="Batching Plant KAI">Batching Plant KAI</option>
+              <option value="Kantor KIPI">Kantor KIPI</option>
+              <option value="Bedeng KAI untuk TKA (Asing)">Bedeng KAI untuk TKA (Asing)</option>
+              <option value="Bedeng KAI untuk TKI (Indonesia)">Bedeng KAI untuk TKI (Indonesia)</option>
             </select>
           </label>
           <label for="date">Tanggal: <!-- date could be input automatically-->
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="date" required>
           </input>
-          <label for="water-filling">Jam Mulai Pengisian:
-            <input type="time" id="water-filling" name="water-filling"></label>
+          <label for="waterfilling">Jam Mulai Pengisian Air:
+            <input type="time" id="waterfilling" name="waterfilling">
           </label>
-          <label for="water-delivered">Jam Selesai Pengantaran:
-            <input type="time" id="water-delivered" name="water-delivered"></label>
+          <label for="waterdelivered">Jam Selesai Pengantaran Ke Tujuan:
+            <input type="time" id="waterdelivered" name="waterdelivered">
           </label>
           <label for="Volume">Volume:
             <input type="number" id="Volume" name="Volume" min="1">
