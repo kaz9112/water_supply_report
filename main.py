@@ -19,7 +19,8 @@ async def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 @app.post("/")
-async def add_name(request: Request, destination: str = Form(...), date: str = Form(...)):
+async def add_form(request: Request, destination: str = Form(...), date: str = Form(...)):
     print(destination)
     print(date)
+    print(waterfilling)
     return templates.TemplateResponse("index.html", {"request": request})

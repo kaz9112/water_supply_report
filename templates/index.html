@@ -30,12 +30,23 @@
           <label for="date">Tanggal: <!-- date could be input automatically-->
             <input type="date" id="date" name="date" required>
           </input>
-          <label for="waterfilling">Jam Mulai Pengisian Air:
-            <input type="time" id="waterfilling" name="waterfilling">
+          <br>
+          <P class="waktuProses">Jam Mulai Pengisian Air:</P>
+          <label for="waterFillHours">Jam:
+            <input type="number" id="waterFillHours" name="waterFillHours">
           </label>
-          <label for="waterdelivered">Jam Selesai Pengantaran Ke Tujuan:
-            <input type="time" id="waterdelivered" name="waterdelivered">
+          <label for="waterFillMinutes">Menit:
+            <input type="number" id="waterFillMinutes" name="waterFillMinutes">
           </label>
+          <br>
+          <P class="waktuProses">Jam Selesai Pengantaran Ke Tujuan:</p>
+          <label for="waterDeliverHours">Jam:
+            <input type="number" id="waterDeliverHours" name="waterDeliverHours">
+          </label>
+          <label for="waterDeliverMinutes">Menit:
+            <input type="number" id="waterDeliverMinutes" name="waterDeliverMinutes">
+          </label>
+          <br>
           <label for="Volume">Volume:
             <input type="number" id="Volume" name="Volume" min="1">
           </label>
