@@ -72,6 +72,16 @@ input[type="file"] {
   padding: 1px 2px;
 }
 
-.waktuProses {
-  
+.timecontainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.flexinput {
+  width: 100px;
+}
+
+.timer {
+  margin: 45px auto;
 }
