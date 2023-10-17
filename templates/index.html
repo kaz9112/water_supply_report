@@ -21,10 +21,10 @@
           <label for="destination">Tujuan:
             <select id="destination" name="destination" required>
               <option value="">(pilih salah satu)</option>
-              <option value="Batching Plant KAI">Batching Plant KAI</option>
-              <option value="Kantor KIPI">Kantor KIPI</option>
-              <option value="Bedeng KAI untuk TKA (Asing)">Bedeng KAI untuk TKA (Asing)</option>
-              <option value="Bedeng KAI untuk TKI (Indonesia)">Bedeng KAI untuk TKI (Indonesia)</option>
+              <option value="Batching_Plant_KAI">Batching Plant KAI</option>
+              <option value="Kantor_KIPI">Kantor KIPI</option>
+              <option value="Bedeng_KAI_Asing">Bedeng KAI untuk TKA (Asing)</option>
+              <option value="Bedeng_KAI_Indo">Bedeng KAI untuk TKI (Indonesia)</option>
             </select>
           </label>
           <label for="date">Tanggal: <!-- date could be input automatically-->
@@ -37,6 +37,7 @@
           <br>
           <div class="timer">
             <h2 class="waktuProses">Jam Mulai Pengisian Air:</h2>
+            <p>(00:00-23:59)</p>
             <div class="timecontainer">
               <label for="waterFillHours">Jam:</label>
                 <input type="number" class="flexinput" id="waterFillHours" name="waterFillHours" min="0" max="23" required>
@@ -45,6 +46,7 @@
             </div>
             <br>
             <h2 class="waktuProses">Jam Selesai Pengantaran Ke Tujuan:</h2>
+            <p>(00:00-23:59)</p>
             <div class="timecontainer">
                 <label for="waterDeliverHours">Jam:</label>
                   <input type="number" class="flexinput" id="waterDeliverHours" name="waterDeliverHours" min="0" max="23" required>
